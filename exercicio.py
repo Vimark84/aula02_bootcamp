@@ -7,10 +7,10 @@ import math
 # 3. Desenvolva um programa que multiplique dois números fornecidos pelo usuário e mostre o resultado.
 # 4. Faça um programa que peça dois números inteiros e imprima a divisão inteira do primeiro pelo segundo.
 
-numero_01 = int(input("digite o primeiro numero: "))
-numero_02 = int(input("digite o segundo numero: ")) 
-resultado = numero_01 // numero_02
-print(resultado)
+#numero_01 = int(input("digite o primeiro numero: "))
+#numero_02 = int(input("digite o segundo numero: ")) 
+#resultado = numero_01 // numero_02
+#print(resultado)
 
 
 # 5. Escreva um programa que calcule o quadrado de um número fornecido pelo usuário.
@@ -22,6 +22,12 @@ print(resultado)
 # 8. Desenvolva um programa que calcule a potência de um número (base e expoente fornecidos pelo usuário).
 # 9. Faça um programa que converta a temperatura de Celsius para Fahrenheit.
 # 10. Escreva um programa que calcule a área de um círculo, recebendo o raio como entrada.
+
+raio_do_circulo = float(input("digite o raio: "))
+area_do_circulo = math.pi *  raio_do_circulo ** 2
+print(f"{area_do_circulo:.2f}")
+
+
 
 #raio_do_circulo = float(input("Digite o raio: "))
 #area_do_circulo = math.pi * raio_do_circulo ** 2
