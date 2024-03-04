@@ -142,15 +142,92 @@ import math
 
 # 20. Escreva um programa que verifique se dois números fornecidos pelo usuário são diferentes.
 # Exemplo de entrada
-num1 = 8
-num2 = 5
-resultado_diferenca = (num1 != num2)
-print("Resultado da diferença:", resultado_diferenca)
+#num1 = 8
+#num2 = 5
+#resultado_diferenca = (num1 != num2)
+#print("Resultado da diferença:", resultado_diferenca)
+
 
 # #### try-except e if
 
 # 21: Conversor de Temperatura
+# try:
+#     celsius = float(input("Enter the Temperature in Celsius :\n"))
+#     fahrenheit = (1.8 * celsius) + 32
+#     print(f"{celsius}ºC é igual a {fahrenheit}ºF")
+# except ValueError:
+#     print("voce não digitou um numero")
+
+
+
 # 22: Verificador de Palíndromo
+# 
+# string = input("digite uma palavra ou frase: ")
+# if string.isdigit():
+#     print("Entrada inválida. Por favor, digite uma palavra ou frase.")
+# else:    
+#     formatado = string.replace(" ", "").lower()
+#     if formatado == formatado[::-1]:
+#         print("É um palíndromo.")
+#     else:
+#         print("Não é um palíndromo.")
+
+    
 # 23: Calculadora Simples
+# tambem podemos resolver isso inicializando resultado antes do bloco try, atribuindo a ele um valor padrão. (NONE)
+# try:
+#     num1 = float(input("Digite o primeiro número: "))
+#     num2 = float(input("Digite o segundo número: "))
+#     operador = input("Digite o operador (+, -, *, /): ")
+#     if operador == '+':
+#         resultado = num1 + num2
+#         print("O resultado é:", resultado)
+#     elif operador == '-':
+#         resultado = num1 - num2
+#         print("O resultado é:", resultado)
+#     elif operador == '*':
+#         resultado = num1 * num2     
+#         print("O resultado é:", resultado)
+#     elif operador == '/' and num2 != 0:
+#         resultado = num1 / num2
+#         print("O resultado é: ", resultado) 
+#     else:     
+#         print("Operador invalido ou divisão por zero.")
+#            
+# except ValueError:
+#     print("Erro: Entrada inválida. Certifique-se de inserir números.")
+
+
+
 # 24: Classificador de Números
+# 
+# try:
+#     num1 = int(input("Digite o primeiro número: "))
+#     if num1 > 0:
+#         print("O numero digitado é: positivo ") 
+#     elif num1 < 0:
+#         print("O numero digitado é: negativo ")
+#     else:
+#         print("O numero digitado é: 0 ")   
+#     if num1 % 2 == 0:
+#         print("Par")
+#     else:
+#         print("Ímpar")          
+# except ValueError:
+#     print("Erro: Entrada inválida. Certifique-se de inserir números.")
+
+
 # 25: Conversão de Tipo com Validação
+
+entrada_lista = input("Digite uma lista de números separados por vírgula: ")
+numeros_str = entrada_lista.split(",")
+numeros_int = []
+try:
+    for num in numeros_str:
+        numeros_int.append(int(num.strip()))
+    print("Lista de inteiros:", numeros_int)
+except ValueError:
+    print("Erro: certifique-se de que todos os elementos são números inteiros válidos.")
+
+
+
